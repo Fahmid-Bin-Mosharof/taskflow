@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#6366f1" />
+    <meta
+      name="description"
+      content="TaskFlow helps you organize projects, manage tasks, and track progress from one simple workspace."
+    />
+    <link rel="icon" type="image/png" href="./public/Icon.png" />
+    <title>TaskFlow</title>
+    <script>
+      // Apply the saved theme before first paint to avoid a flash.
+      // Keep the key in sync with src/context/ThemeContext.jsx.
+      (function () {
+        try {
+          var stored = localStorage.getItem('taskflow-theme')
+          var dark =
+            stored === 'dark' ||
+            (stored !== 'light' &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.classList.toggle('dark', dark)
+        } catch (e) {
+          /* storage unavailable: fall back to the light theme */
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
