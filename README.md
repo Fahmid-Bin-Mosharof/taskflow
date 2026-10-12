@@ -24,7 +24,7 @@ TaskFlow is a clean, focused task management workspace designed to help you orga
 
 | Area | Technology |
 |---|---|
-| Frontend | React, Vite, JavaScript, React Router, Tailwind CSS v4, React Icons |
+| Frontend | React, Vite, JavaScript, React Router, Tailwind CSS, React Icons |
 | Backend | Firebase Authentication, Cloud Firestore, Firebase App Check |
 | Libraries | @dnd-kit/core, Recharts, react-hot-toast |
 
