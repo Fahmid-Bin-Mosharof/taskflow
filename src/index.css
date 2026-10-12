@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* Class-based dark mode: toggled by adding "dark" to <html> */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
@@ -11,7 +10,6 @@
 }
 
 @layer base {
-  /* Toast colors (react-hot-toast can't use Tailwind's dark: variants) */
   :root {
     --toast-bg: #ffffff;
     --toast-fg: #0f172a;
@@ -39,7 +37,6 @@
     }
   }
 
-  /* Visible keyboard focus for accessibility */
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-primary;
   }

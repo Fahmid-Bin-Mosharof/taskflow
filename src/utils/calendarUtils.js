@@ -6,7 +6,9 @@ export const startOfMonth = (date) => new Date(date.getFullYear(), date.getMonth
 export const addDays = (date, amount) =>
   new Date(date.getFullYear(), date.getMonth(), date.getDate() + amount)
 
-/** Sunday-first weekday names: [{ short: 'Sun', long: 'Sunday' }, ...] */
+/** 
+ * Sunday-first weekday names: [{ short: 'Sun', long: 'Sunday' }, ...] 
+ */
 export function getWeekdayLabels() {
   const short = new Intl.DateTimeFormat('en-US', { weekday: 'short' })
   const long = new Intl.DateTimeFormat('en-US', { weekday: 'long' })

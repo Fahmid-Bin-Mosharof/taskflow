@@ -5,6 +5,7 @@ const STORAGE_KEY = 'taskflow-theme'
 
 const isTheme = (value) => value === 'light' || value === 'dark'
 
+
 // eslint-disable-next-line react-refresh/only-export-components
 export const ThemeContext = createContext(null)
 
@@ -13,7 +14,7 @@ function readStoredTheme() {
     const stored = localStorage.getItem(STORAGE_KEY)
     return isTheme(stored) ? stored : null
   } catch {
-    return null // storage unavailable (e.g. private mode)
+    return null 
   }
 }
 

@@ -7,9 +7,6 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        // Vendor chunks change rarely, so returning visitors keep them cached
-        // across deploys. Recharts is already its own chunk because the
-        // dashboard charts are lazy-loaded.
         manualChunks(id) {
           if (!id.includes('node_modules')) return
           if (id.includes('/firebase/') || id.includes('/@firebase/')) return 'firebase'
