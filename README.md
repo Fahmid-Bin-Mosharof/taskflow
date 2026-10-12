@@ -2,8 +2,7 @@
 
 TaskFlow is a clean, focused task management workspace designed to help you organize projects, manage tasks, and track progress effortlessly. Create projects, move tasks across the board as work progresses, and watch your completion rate grow. TaskFlow works seamlessly across desktop, tablet, and mobile devices.
 
-**Live demo:** [https://your-project.web.app](https://your-project.web.app)
-**Repository:** [https://github.com/your-username/taskflow](https://github.com/your-username/taskflow)
+**Live demo:** https://taskflow-242be.web.app
 
 ## Features
 
